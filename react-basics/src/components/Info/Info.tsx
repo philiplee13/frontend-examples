@@ -11,4 +11,5 @@ function Info() {
   );
 }
 
+// useState example
 export default Info;
