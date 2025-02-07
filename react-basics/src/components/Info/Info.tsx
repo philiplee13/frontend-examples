@@ -39,4 +39,6 @@ function ShowList({ data }: ApiData) {
   );
 }
 
+// useEffect example
+
 export default Info;

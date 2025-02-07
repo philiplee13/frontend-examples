@@ -42,7 +42,8 @@ interface ButtonProps {
   name: string;
 }
 function Button({ name }: ButtonProps) {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState<number>(0);
+  // https://react.dev/learn/typescript#typing-usestate
 
   const increment = () => {
     setCount(count + 1);
