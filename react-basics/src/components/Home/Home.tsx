@@ -3,15 +3,13 @@ import { Link } from "react-router";
 function Home() {
   return (
     <>
-      <div>
-        <h1>Home Page</h1>
-        <Link to="/info">
-          <button>Info Page</button>
-        </Link>
-        {/* usually this isn't hard coded but data from an api */}
-        {/* api call outside of this render and load the data that way */}
-        <Greeting firstName="jane" lastName="doe" age={5} />
-      </div>
+      <h1>Home Page</h1>
+      <Link to="/info">
+        <button>Info Page</button>
+      </Link>
+      {/* usually this isn't hard coded but data from an api */}
+      {/* api call outside of this render and load the data that way */}
+      <Greeting firstName="jane" lastName="doe" age={5} />
     </>
   );
 }
