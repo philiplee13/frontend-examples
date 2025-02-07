@@ -38,4 +38,5 @@ function ShowList({ data }: ApiData) {
     </>
   );
 }
+
 export default Info;
