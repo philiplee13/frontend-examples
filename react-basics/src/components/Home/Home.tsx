@@ -84,6 +84,12 @@ function ShowTable() {
       valueGetter: (value, row) =>
         `${row.firstName || ""} ${row.lastName || ""}`,
     },
+    {
+      field: "Edit",
+      valueGetter: (value, row) => {
+        row.id;
+      },
+    },
   ];
 
   const rows = [
@@ -103,6 +109,7 @@ function ShowTable() {
   return (
     // materialUI
     //https://mui.com/material-ui/react-table/
+    // in prod maybe it's better to use https://mui.com/x/react-data-grid/editing/
     <Paper sx={{ height: 400, width: "100%" }}>
       <DataGrid
         rows={rows}
